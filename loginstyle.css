@@ -15,14 +15,88 @@ body{
 
 .hlogin{
     padding: 30px;
+    width: 100px;
+    margin-top: 5px;
 }
 
 @media only screen and (max-width: 600px) {
     .headerlogin{
         display: flex;
         justify-content: center;
+        width: 100%;
     }
 } /* Fundi i kodit te stilizimit per header */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-grow: inherit;
+    flex-shrink: inherit;
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box{
+    position: relative;
+    border-radius: 5px;
+    background: black;
+    width: 600px;
+    height: 600px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.inputBox{
+    padding: 9px;
+}
+
+#forgotpsw{
+    padding-left: 65px;
+}
+
+#hr2{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+} 
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: grey;
+    background: black;
+    flex-grow: inherit;
+    flex-shrink: inherit;
+    padding: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    footer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+} 
+
+
+
+
+
 
 
 
