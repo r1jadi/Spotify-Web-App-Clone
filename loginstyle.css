@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+
+.headerlogin{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 100px;
+    flex-grow: inherit;
+    flex-shrink: inherit;
+}
+
+.hlogin{
+    padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerlogin{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
