@@ -2,7 +2,6 @@ body{
     margin: 0;
 }
 
-
 /* Fillimi i kodit te stilizimit per header */
 .headerlogin{
     display: flex;
@@ -20,13 +19,14 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
-    .headerlogin{
+    header .headerlogin{
         display: flex;
         justify-content: center;
         width: 100%;
     }
 } /* Fundi i kodit te stilizimit per header */
 
+/*log in form fillimi */
 main{
     display: flex;
     justify-content: center;
@@ -88,15 +88,17 @@ form{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
 @media only screen and (max-width: 600px) {
     main{
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        width: 100%;
     }
-} 
+} /*log in form fundi */
 
+
+
+/* footer fillimi */
 footer{
     display: flex;
     justify-content: center;
@@ -114,7 +116,7 @@ footer{
         justify-content: center;
         width: 100%;
     }
-} 
+} /* footer mbarimi */
 
 
 
