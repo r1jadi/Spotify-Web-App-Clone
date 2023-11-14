@@ -2,6 +2,8 @@ body{
     margin: 0;
 }
 
+
+/* Fillimi i kodit te stilizimit per header */
 .headerlogin{
     display: flex;
     width: 100%;
@@ -20,7 +22,7 @@ body{
         display: flex;
         justify-content: center;
     }
-}
+} /* Fundi i kodit te stilizimit per header */
 
 
 
