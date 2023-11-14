@@ -45,6 +45,7 @@ main{
     background: black;
     width: 600px;
     height: 600px;
+    padding: 40px;
 }
 
 form{
@@ -56,6 +57,7 @@ form{
 
 .inputBox{
     padding: 9px;
+    
 }
 
 #forgotpsw{
@@ -65,6 +67,27 @@ form{
 #hr2{
     margin-top: 20px;
 }
+
+#loginid{
+    width: 175px;
+    height: 30px;
+    border: 0px solid;
+    border-radius: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #1DB954;
+    color: black;
+}
+
+.inputclasses{
+    background: #343434;
+    color: white;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 7px;
+    border-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 @media only screen and (max-width: 600px) {
     main{
