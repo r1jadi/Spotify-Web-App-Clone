@@ -3,21 +3,22 @@ body{
     padding: 0;
 }
 
-.navsignup{
+.headersignup{
     display: flex;
     background-color: black;
     justify-content: space-between;
     flex-basis: 100%;
     height: 100px;
+    flex-shrink: 0;
 }
 
-.navlogo{
+.headerlogosignup{
     padding: 30px;
     width: 100px;
     margin-top: 5px;
 }
 
-.navlogin{
+.headersignuplogin{
     width: 100px;
     height: 30px;
     border: 0px solid;
@@ -28,32 +29,15 @@ body{
 }
 
 #aid{
-    padding-right: 30px;
-    margin-top: 30px;
-}
-
-
-@media only screen and (max-width: 600px) {
-    navsignup{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-basis: 100%;
-    }
-}
-
-
-/*header{
-    display: flex;
-    width: 100%;
-    background: black;
-}
-
-.hsignup{
     padding: 30px;
     width: 100px;
     margin-top: 5px;
 }
 
-
-*/
+@media only screen and (max-width: 600px) {
+    .headersignup{
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+}

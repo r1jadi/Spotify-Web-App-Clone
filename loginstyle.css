@@ -4,10 +4,11 @@ body{
 }
 
 /* Fillimi i kodit te stilizimit per header */
-header{
+.headerlogin{
     display: flex;
-    width: 100%;
-    background: black;
+    background-color: black;
+    flex-basis: 100%;
+    height: 100px;
     flex-shrink: 0;
 }
 
@@ -99,10 +100,10 @@ footer{
 
 /*fillimi stilizimi per responsivitet */
 @media only screen and (max-width: 600px) {
-    header{
+    .headerlogin{
         display: flex;
         justify-content: center;
-        width: 100%;
+        flex-basis: 100%;
     }
     main{
         display: flex;
@@ -114,7 +115,7 @@ footer{
     footer>p{
         display: flex;
         justify-content: center;
-        width: 100%;
+        flex-basis: 100%;
     }
 } 
 /* fundi stilizimit per responsivitet */
