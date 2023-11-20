@@ -99,7 +99,7 @@ footer{
 
 
 /*fillimi stilizimi per responsivitet */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .headerlogin{
         display: flex;
         justify-content: center;

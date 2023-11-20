@@ -44,12 +44,13 @@ body{
     margin-top: 50px;
 }
 
-main{
+/*main{
     width: 100%;
 }
 form{
     padding: 10px;
-}
+}*/
+
 .container{
     display: flex;
     flex-basis: 100%;
@@ -121,8 +122,28 @@ footer{
     padding: 30px;
 } 
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .headersignup{
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+
+    #h1main{
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    footer>p{
         display: flex;
         justify-content: center;
         flex-basis: 100%;
