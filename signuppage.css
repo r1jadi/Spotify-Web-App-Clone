@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #121212;
 }
 
 .headersignup{
@@ -33,6 +34,43 @@ body{
     width: 100px;
     margin-top: 5px;
 }
+
+#h1main{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+.inputItem{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.inputItem>p{
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: grey;
+    background: black;
+    padding: 30px;
+} 
 
 @media only screen and (max-width: 600px) {
     .headersignup{
