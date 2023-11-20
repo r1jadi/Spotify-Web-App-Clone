@@ -16,6 +16,9 @@
         </div>
     </header>
 
+    <main>
+
+   
     <h1 id="h1main">Sign up to start listening</h1>
 
     <div class="container">
@@ -24,22 +27,24 @@
 
             <div class="inputItem">
                 <p>Email address
-                    <input type="email" placeholder="name@domain.com" required="required" name="signupemail">
+                    <input type="email" placeholder="name@domain.com" required="required" name="signupemail" class="inputclass">
                 </p>
                 
             </div>
 
             <div class="inputItem">
                 <p>Create a password
-                    <input type="password" required="required" name="signuppassword">
+                    <input type="password" required="required" name="signuppassword" class="inputclasspsw"> <br>
+                    <span class="spantxt">The password must contain at least 8 characters. We recommend including at least 1 number and 1 special character.</span>
                 </p>
                 
             </div>
 
             <div class="inputItem">
                
-                    <p>Name <br> This name will appear on your profile
-                    <input type="text" required="required" name="signupname">
+                    <p>Name <br>
+                        <span class="spantxt">This name will appear on your profile</span>
+                    <input type="text" required="required" name="signupname" class="inputclass">
                     </p>
               
                 
@@ -48,30 +53,37 @@
 
             <div class="inputItem">
                 <p>Date of birth
-                    <input type="date" required="required" name="signupbirthday">
+                    <input type="date" required="required" name="signupbirthday" class="inputclass">
                 </p>
                 
             </div>
 
             <div class="inputItem">   
-                <p>Gender <br> We use your gender to help personalize our content recommendations and ads for you.</p>
-                <p class="gjiniap">M<input type="radio" id="gjiniaM" name="gender" value="Male" required="required">
-                F<input type="radio" id="gjiniaF" name="gender" value="Female" required="required"></p>
+                <p>Gender <br> <br>
+                    <span class="spantxt">We use your gender to help personalize our content recommendations and ads for you.</span></p>
+                <p class="gjiniap">Male<input type="radio" id="gjiniaM" name="gender" value="Male" required="required">
+                Female<input type="radio" id="gjiniaF" name="gender" value="Female" required="required"></p>
                 
                 
             </div>
             
             <div class="inputItem">
                 <p>Terms & Conditions
-                <p><input type="checkbox">Share my registration data with Spotify's content providers for marketing purposes.</p>
-                <p>By clicking on sign-up, you agree to Spotify's Terms and Conditions of Use.</p>
+                <p><input type="checkbox" class="inputclass"><span class="spantxt">Share my registration data with Spotify's content providers for marketing purposes. <br>
+                    <br>
+                By clicking on sign-up, you agree to Spotify's Terms and Conditions of Use.</span>
                 </p>
                 
+            </div>
+
+            <div>
+                <input type="submit" value="Sign Up" id="signupid" name="signupbutton" class="inputclasssignup">
             </div>
         </form>
 
     </div>
-    
+</main>
+
     <footer>
         <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
        </footer>

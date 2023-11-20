@@ -44,6 +44,12 @@ body{
     margin-top: 50px;
 }
 
+main{
+    width: 100%;
+}
+form{
+    padding: 10px;
+}
 .container{
     display: flex;
     flex-basis: 100%;
@@ -55,14 +61,57 @@ body{
     width: 200px;
 }
 
+.inputclass{
+    margin-top: 5px;
+    background: #343434;
+    color: white;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 6px;
+    border-color: white;
+    
+}
+
+.inputclasspsw{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #343434;
+    color: white;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 6px;
+    border-color: white;
+}
+
 .inputItem>p{
     color: #ffffff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
 }
 
+.spantxt{
+    color: grey;
+    font-family: Georgia, serif;
+    font-size: smaller;
+}
 
+.gjiniap{
+    color: grey;
+    font-family: Georgia, serif;
+    font-size: smaller;
+}
 
-
+.inputclasssignup{
+    width: 175px;
+    height: 30px;
+    border: 0px solid;
+    border-radius: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #1DB954;
+    color: black;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
 
 footer{
     display: flex;
