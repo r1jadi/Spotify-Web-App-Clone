@@ -36,6 +36,27 @@ body{
     height: 20px;
 }
 
+
+footer{
+    color: white;
+    display: flex;
+    background-color: black;
+    flex-basis: 100%;
+    height: 180px;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style-type: none;
+}
+li>a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
 @media screen and (max-width: 600px){
 
     .navhomepage{
