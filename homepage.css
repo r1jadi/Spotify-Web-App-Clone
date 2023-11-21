@@ -23,7 +23,7 @@ body{
     display: flex;
     gap: 10px;
     padding: 30px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .navanchor{
@@ -36,3 +36,14 @@ body{
     height: 20px;
 }
 
+@media screen and (max-width: 600px){
+
+    .navhomepage{
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+
+
+
+}
