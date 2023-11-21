@@ -12,7 +12,7 @@ body{
     flex-shrink: 0;
 }
 
-.navheaderlogo{
+.navheaderlogo{ 
     padding: 30px;
     width: 100px;
     margin-top: 5px;
@@ -30,3 +30,9 @@ body{
     text-decoration: none;
     color: white;
 }
+
+.navanchor:hover {
+    background-color: gray;
+    height: 20px;
+}
+
