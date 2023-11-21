@@ -37,8 +37,8 @@ body{
     height: 20px;
 }
 
-.mainbody{
-    height: fit-content;
+main{
+    min-height: 100vh;
 }
 
 
