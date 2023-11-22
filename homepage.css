@@ -11,6 +11,10 @@ body{
     height: 100px;
     flex-shrink: 0;
     margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navheaderlogo{ 
