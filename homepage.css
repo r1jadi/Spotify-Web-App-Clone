@@ -37,7 +37,7 @@ body{
 }
 
 .navanchor:hover {
-    background-color: gray;
+    background-color: #555555;
     height: 20px;
 }
 
@@ -63,7 +63,18 @@ li>a{
     text-decoration: none;
 }
 
-
+.kolona1>li:hover{
+    background-color: #555555;
+    height: 20px;
+}
+.kolona2>li:hover{
+    background-color: #555555;
+    height: 20px;
+}
+.kolona3>li:hover{
+    background-color: #555555;
+    height: 20px;
+}
 
 @media screen and (max-width: 600px){
 
