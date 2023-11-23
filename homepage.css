@@ -12,10 +12,10 @@ body{
     height: 100px;
     flex-shrink: 0;
     margin-bottom: 10px;
-    position: fixed;
+    /*position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000;*/
 }
 
 .navheaderlogo{ 
@@ -42,7 +42,41 @@ body{
 }
 
 main{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/*.mainbody{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}*/
+
+.fotot{
+    background-color: #343434;
+    color: white;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    margin: 10px;
+
+}
+
+.fotot:hover{
+    background-color: #555555;
+}
+.fotot>img{
+    height: 200px;
+    width: 200px;
+    border: solid 0px;
+    border-radius: 5px;
 }
 
 
