@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #121212;
 }
 
 .navhomepage{
@@ -52,7 +53,6 @@ footer{
     height: 180px;
     flex-shrink: 0;
     justify-content: space-evenly;
-    margin-bottom: 0;
 }
 
 li{
@@ -79,7 +79,6 @@ li>a{
     background-color: black;
     flex-shrink: 0;
     justify-content: center;
-    margin-top: 0;
 }
 
 @media screen and (max-width: 600px){
@@ -109,6 +108,7 @@ li>a{
     .footerbottom{
         display: flex;
         justify-content: center;
+        margin-bottom: 0;
     }
 
 }
