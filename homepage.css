@@ -107,6 +107,20 @@ body{
     border-radius: 5px;
 }
 
+.slideshow{
+    display: flex;
+    justify-content: center;
+    min-height: 60vh;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    
+}
+
+.mySlides{
+    width: 700px;
+    height: 400px;
+}
+
 
 footer{
     color: white;
@@ -167,6 +181,7 @@ li>a{
         display: flex;
         align-items: center;   
     }
+    
     
     footer{
         display: flex;
