@@ -38,9 +38,23 @@ body{
     color: #1ed760;;
 }
 
-main{
-    min-height: 100vh;
+.firstmain{
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
 }
+
+.secondmain{
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.anchorclass{
+    font-weight: bold;
+    color: rgb(29, 185, 84);
+}
+
 
 footer{
     color: white;
@@ -98,6 +112,23 @@ li>a{
         margin-top: 35px;
     }
 
+    .firstmain{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        flex-shrink: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .secondmain{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        flex-shrink: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
 
     footer{
