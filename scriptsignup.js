@@ -6,7 +6,7 @@ function validateSignUp(){
     let name = document.getElementById('name').value;
     let ditelindja = document.getElementById('ditelindja').value;
 
-    let emailRegex = /^[^zs@] + @[^\s@] +\.[^\s@] + $/;
+    let emailRegex = /^[^\s@] + @[^\s@] +\.[^\s@] + $/;
     if(!emailRegex.test(email)){
         alert('Please enter a valid email adress');
         return false;
