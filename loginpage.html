@@ -21,24 +21,24 @@
 
     <div class="box">
 
-        <form action="homepage.html">
+        <form action="homepage.html" onsubmit="return validateLogIn()">
 
         <h1>Log in to Spotify</h1>
         
         <div>
             <hr>
             <p>Email address</p>
-            <input class="inputclasses" type="text" name="usr" required="required" placeholder="email address">   
+            <input class="inputclasses" type="email" name="usr" required="required" placeholder="email address" id="usremail">   
         </div>
 
         <div>
             <p>Password</p>
-            <input class="inputclasses" type="password" name="psw" required="required" placeholder="password">   
+            <input class="inputclasses" type="password" name="psw" required="required" placeholder="password" id="psw">   
         </div>
 
         <div class="checkclass">
             <p>
-            <input type="checkbox">Remember me</p>
+            <input type="checkbox" /*id="rememberMeCheckbox"onchange="handleCheckboxChange()"*/ >Remember me</p>
         </div>
         
         <div>
@@ -60,6 +60,9 @@
 <footer>
     <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
    </footer>
+
+
+   <script src="loginscript.js"></script>
 
 </body>
 </html>
