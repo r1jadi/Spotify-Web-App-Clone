@@ -18,7 +18,7 @@ function validateSignUp(){
 
     let passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
     if(!passwordRegex.test(password)){
-        alert('Please enter a valid password(The password must contain at least 8 characters, including at least 1 number and 1 special character.');
+        alert('Please enter a valid password(The password must contain at least 8 characters, including at least 1 number and 1 special character.)');
         return false;
     }
 
