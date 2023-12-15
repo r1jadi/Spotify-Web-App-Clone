@@ -11,8 +11,8 @@
     
     <header>
         <div class="headersignup">
-            <a href="homepage.html"><img src="Images/headerlogo.png" alt="Header Logo" class="headerlogosignup"></a>
-            <a href="loginpage.html" id="aid"><input type="submit" value="Log in" class="headersignuplogin"></a>
+            <a href="homepage.php"><img src="Images/headerlogo.png" alt="Header Logo" class="headerlogosignup"></a>
+            <a href="loginpage.php" id="aid"><input type="submit" value="Log in" class="headersignuplogin"></a>
         </div>
     </header>
 
@@ -23,7 +23,7 @@
 
     <div class="container">
 
-        <form action="loginpage.html" onsubmit="return validateSignUp()">
+        <form action="loginpage.php" onsubmit="return validateSignUp()">
 
             <div class="inputItem">
                 <p>Email address

@@ -13,7 +13,7 @@
     <!-- Fillimi i kodit per header -->
     <header>
         <div class="headerlogin">
-            <a href="homepage.html"><img class="hlogin" src="Images/headerlogo.png" alt="Header Logo" ></a>
+            <a href="homepage.php"><img class="hlogin" src="Images/headerlogo.png" alt="Header Logo" ></a>
         </div>
     </header> <!-- Fundi i kodit per header --> 
     
@@ -21,7 +21,7 @@
 
     <div class="box">
 
-        <form action="homepage.html" onsubmit="return validateLogIn()">
+        <form action="homepage.php" onsubmit="return validateLogIn()">
 
         <h1>Log in to Spotify</h1>
         
@@ -50,7 +50,7 @@
         <div class="linqet">
             <a href="#" id="forgotpsw" class="apswsignup">Forgot your password?</a>
             <hr id="hr2">
-            <p id="psignup">Don't have an account? <a href="signuppage.html" class="apswsignup">Sign up for Spotify</a></p>
+            <p id="psignup">Don't have an account? <a href="signuppage.php" class="apswsignup">Sign up for Spotify</a></p>
         </div>
        
         </form>

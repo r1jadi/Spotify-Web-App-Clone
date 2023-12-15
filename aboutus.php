@@ -12,11 +12,11 @@
 
     <nav>
         <div class="navaboutus">
-            <a href="homepage.html"><img src="Images/headerlogo.png" alt="Header Logo" class="navheaderlogo"></a>
+            <a href="homepage.php"><img src="Images/headerlogo.png" alt="Header Logo" class="navheaderlogo"></a>
             <div class="navlist">
-                <a href="homepage.html" class="navanchor">Home page</a>
-                <a href="loginpage.html" class="navanchor">Log in</a>
-                <a href="signuppage.html" class="navanchor">Sign up</a>
+                <a href="homepage.php" class="navanchor">Home page</a>
+                <a href="loginpage.php" class="navanchor">Log in</a>
+                <a href="signuppage.php" class="navanchor">Sign up</a>
             </div>
         </div>
     </nav>
@@ -87,7 +87,7 @@
     
         <div class="kolona1">
             <h3>Company</h3>
-            <li><a href="aboutus.html">About</a></li>
+            <li><a href="aboutus.php">About</a></li>
             <li><a href="#">Jobs</a></li>
             <li><a href="#">For the record</a></li>
         </div>

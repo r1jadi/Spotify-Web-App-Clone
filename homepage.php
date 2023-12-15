@@ -12,11 +12,11 @@
     
     <header>
         <div class="navhomepage">
-            <a href="loginpage.html"><img src="Images/headerlogo.png" alt="Header Logo" class="navheaderlogo"></a>
+            <a href="loginpage.php"><img src="Images/headerlogo.png" alt="Header Logo" class="navheaderlogo"></a>
             <div class="navlist">
-                <a href="homepage.html" class="navanchor">Home</a>
+                <a href="homepage.php" class="navanchor">Home</a>
                 <a href="#" class="navanchor">Playlists</a>
-                <a href="aboutus.html" class="navanchor">About</a>
+                <a href="aboutus.php" class="navanchor">About</a>
                 <a href="#" class="navanchor">Contact</a>
             </div>
         </div>
@@ -134,7 +134,7 @@
     
         <div class="kolona1">
             <h3>Company</h3>
-            <li><a href="aboutus.html">About</a></li>
+            <li><a href="aboutus.php">About</a></li>
             <li><a href="#">Jobs</a></li>
             <li><a href="#">For the record</a></li>
         </div>
