@@ -167,5 +167,7 @@
         <script src="scripthomepage.js">
 
         </script>
+
+    <?php  ?>
 </body>
 </html>

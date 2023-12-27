@@ -64,5 +64,6 @@
 
    <script src="loginscript.js"></script>
 
+   <?php  ?>
 </body>
 </html>

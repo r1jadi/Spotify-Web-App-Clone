@@ -89,5 +89,7 @@
        </footer>
 
        <script src="scriptsignup.js"></script>
+
+       <?php  ?>
 </body>
 </html>
