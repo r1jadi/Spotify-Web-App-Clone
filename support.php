@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Support</title>
-    <link rel="stylesheet" href="supportcss.css">
+    <title>Support - Spotify</title>
+    <link rel="stylesheet" href="aboutus.css">
+
+
 </head>
 <body>
-    
 
-<header>
-        <div class="navhomepage">
-            <a href="loginpage.php"><img src="Images/headerlogo.png" alt="Header Logo" class="navheaderlogo"></a>
+    <nav>
+        <div class="navaboutus">
+            <a href="homepage.php"><img src="Images/headerlogo.png" alt="Header Logo" class="navheaderlogo"></a>
             <div class="navlist">
-                <a href="homepage.php" class="navanchor">Home</a>
-                <a href="#" class="navanchor">Playlists</a>
-                <a href="aboutus.php" class="navanchor">About</a>
-                <a href="#" class="navanchor">Contact</a>
+                <a href="homepage.php" class="navanchor">Home page</a>
+                <a href="loginpage.php" class="navanchor">Log in</a>
+                <a href="signuppage.php" class="navanchor">Sign up</a>
             </div>
         </div>
-    </header>
+    </nav>
+    
+    <main class="firstmain">
 
+    <div>
+        <a href="help.php"><h2>How can we help you?</h2></a>
+        <a href=""><h3>Log-in</h3></a><p>for faster help</p>
+    </div>
 
-    <main>
-        
     </main>
 
+    
     <footer>
     
         <div class="kolona1">
@@ -46,7 +51,7 @@
 
         <div class="kolona3">
             <h3>Useful links</h3>
-            <li><a href="support.php">Support</a></li>
+            <li><a href="#">Support</a></li>
             <li><a href="#">Free mobile app</a></li>
         </div>
 
@@ -55,12 +60,7 @@
    <div class="footerbottom">
             <p>© 2023 Spotify AB</p>
         </div>
-   
 
-        <script src="scripthomepage.js">
-
-        </script>
-
-    <?php  ?>
+        <?php  ?>
 </body>
 </html>
