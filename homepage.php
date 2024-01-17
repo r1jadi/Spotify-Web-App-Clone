@@ -151,7 +151,7 @@
         <div class="kolona3">
             <h3>Useful links</h3>
             <li><a href="support.php">Support</a></li>
-            <li><a href="#">Free mobile app</a></li>
+            <li><a href="terms.php">Terms and conditions</a></li>
         </div>
 
    </footer>

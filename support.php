@@ -26,7 +26,7 @@
         <div class="help">
         <p>Spotify Support</p>    
         <h2>How can we help you?</h2>
-        <p><a href="" class="anchorcl">Log-in</a> to get faster help</p>
+        <p><a href="loginpage.php" class="anchorcl">Log-in</a> to get faster help</p>
         </div>        
     </main>
 
