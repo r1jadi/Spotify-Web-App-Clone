@@ -36,11 +36,14 @@ body{
     margin-top: 5px;
 }
 
-main{
-    display: flex;
-    justify-content: center;
+.maindiv{
     min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 50px;
 }
+
 .maindiv{
     color: white;
 }
