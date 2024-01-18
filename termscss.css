@@ -36,14 +36,17 @@ body{
     margin-top: 5px;
 }
 
-.maindiv{
+.main1{
     min-height: 100vh;
+    min-width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    padding: 50px;
+    color: white;
 }
 
-.maindiv{
-    color: white;
+@media screen and (max-width: 600px) {
+    .headersignup{
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+    }
 }

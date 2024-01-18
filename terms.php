@@ -17,7 +17,7 @@
 
     <main class="main1">
         
-    <div class="maindiv div1">
+    <div class="maindiv">
         <h2>1. Introduction</h2>
         <p>Please read carefully the following Terms of Use (these “Terms”) which govern your use of Spotify's personalized services for streaming music and other <br>
          content, including all of our websites and software applications incorporating or link these Terms (collectively, the “ Spotify Service ”) and any music, videos, <br>
