@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Fillimi i kodit te stilizimit per header */
+.headerlogin{
+    display: flex;
+    background-color: black;
+    flex-basis: 100%;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.hlogin{
+    padding: 30px;
+    width: 100px;
+    margin-top: 5px;
+}/* Fundi i kodit te stilizimit per header */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
+    color: white;
+    font-family: sans-serif;
+    flex-shrink: 0;
+}
+
+main>h4{
+    color: #1ed760;
+}
+main>h2{
+    color: black;
+}
+main>p{
+    color: black;
+}
+main>p>span{
+    color: white;
+}
+
+
+/* footer fillimi */
+footer{
+    display: flex;
+    justify-content: center;
+    color: grey;
+    background: black;
+    padding: 30px;
+} /* footer mbarimi */
+
+
+/*fillimi stilizimi per responsivitet */
+@media screen and (max-width: 600px) {
+    .headerlogin{
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: black;
+        padding: 20px;
+    }
+    main>h4{
+        color: white;
+    }
+    main>h2{
+        color: white;
+    }
+    main>p{
+        color: white;
+    }
+    footer>p{
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+} 
+
