@@ -112,7 +112,6 @@
    <div id="kontenti">
         <header>
             <img id="slideshow" />
-            <img src="/Images/travisscott2.jpg"alt="">
         </header>
         <button onclick="ndrroImg()">Next</button>
     </div>
@@ -123,7 +122,7 @@
             <h3>Company</h3>
             <li><a href="aboutus.php">About</a></li>
             <li><a href="#">Jobs</a></li>
-            <li><a href="#">For the record</a></li>
+            <li><a href="fortherecord.php">For the record</a></li>
         </div>
 
         <div class="kolona2">

@@ -89,7 +89,7 @@
             <h3>Company</h3>
             <li><a href="aboutus.php">About</a></li>
             <li><a href="#">Jobs</a></li>
-            <li><a href="#">For the record</a></li>
+            <li><a href="fortherecord.php">For the record</a></li>
         </div>
 
         <div class="kolona2">
@@ -103,8 +103,8 @@
 
         <div class="kolona3">
             <h3>Useful links</h3>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Free mobile app</a></li>
+            <li><a href="support.php">Support</a></li>
+            <li><a href="terms.php">Terms and conditions</a></li>
         </div>
 
    </footer>
