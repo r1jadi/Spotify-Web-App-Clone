@@ -105,16 +105,10 @@
 
         <div class="headingbody">
             <h2>Your favorite artists</h2>
-            <p>Your favorite artists based on music you listened lately</p> 
+            <a href="favartists.php" id="anchoranchor"><p>Your favorite artists based on music you listened lately</p></a>
         </div>
    </main>
 
-   <div id="kontenti">
-        <header>
-            <img id="slideshow" />
-        </header>
-        <button onclick="ndrroImg()">Next</button>
-    </div>
 
    <footer>
     
