@@ -107,28 +107,8 @@
             <h2>Your favorite artists</h2>
             <p>Your favorite artists based on music you listened lately</p> 
         </div>
-
-
-        <div class="slideshowTest">
-            <img src="Images/dualipapic.webp" alt="Dua Lipa" class="DuaLipaTest">
-        </div>
-        <!--div class="slideshow">
-            <img class="fotoslide" src="Images/dualipapic.webp">
-            <img class="fotoslide" src="Images/ledrivulapic.jpg">
-            <img class="fotoslide" src="Images/travisscott2.jpg">
-            <img class="fotoslide" src="Images/dhuratadora2.jpg">
-            
-        </div-->
-        
-        <!--p> slider i pa perfunduar </p-->
-
-        <!--div class="butonat">
-                <button class="button previous" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="button next" onclick="plusDivs(+1)">&#10095;</button>
-            </div-->
-        
    </main>
-   
+
 
    <footer>
     
@@ -159,10 +139,6 @@
    <div class="footerbottom">
             <p>© 2023 Spotify AB</p>
         </div>
-   
-
-
-
 
         <script src="scripthomepage.js">
 
