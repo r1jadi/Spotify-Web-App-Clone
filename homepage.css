@@ -85,6 +85,29 @@ body{
 }
 
 
+#kontenti {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Segoe UI light', Tahoma; 
+    width: 400px;
+    margin: 0 auto;
+}
+
+#kontenti img {
+    max-width: 400px; 
+    height: 220px;
+}
+
+button{
+    border-radius: 100%; 
+    width: 40px; 
+    height: 40px;
+    font: 10pt; 
+    color: blue;
+}
+
 footer{
     color: white;
     display: flex;

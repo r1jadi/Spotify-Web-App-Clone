@@ -109,6 +109,13 @@
         </div>
    </main>
 
+   <div id="kontenti">
+        <header>
+            <img id="slideshow" />
+            <img src="/Images/travisscott2.jpg"alt="">
+        </header>
+        <button onclick="ndrroImg()">Next</button>
+    </div>
 
    <footer>
     
