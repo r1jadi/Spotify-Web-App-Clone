@@ -1,3 +1,18 @@
+<?php
+ // session_start();
+ // $hide="";
+  //if(!isset($_SESSION['usr']))
+ //   header("location:loginpage.php");
+ // else{
+  //  if($_SESSION['role'] == "admin")
+  //    $hide = "";
+   // else
+ //     $hide = "hide";
+ // }
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +32,7 @@
                 <a href="homepage.php" class="navanchor">Home</a>
                 <a href="#" class="navanchor">Playlists</a>
                 <a href="aboutus.php" class="navanchor">About</a>
-                <a href="#" class="navanchor">Contact</a>
+                <a href="dashboard.php" class="navanchor" class="<?php echo $hide?>">Dashboard</a>
             </div>
         </div>
     </header>
@@ -144,6 +159,5 @@
 
         </script>
 
-    <?php  ?>
 </body>
 </html>

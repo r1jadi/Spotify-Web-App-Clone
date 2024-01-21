@@ -11,17 +11,7 @@
 <body>
 
 <?php  
-session_start();
 
-if (!isset($_SESSION["role"])) {
-    header("Location: login.php");
-    exit();
-}
-
-if ($_SESSION["role"] !== "admin") {
-    echo "You don't have permission to access this page.";
-    exit();
-}
 ?>
 
     <header>
@@ -74,8 +64,8 @@ if ($_SESSION["role"] !== "admin") {
         <div class="rolidiv">
              <p style="font-family: sans-serif; font-weight: bolder;">Role</p>
                 <select name="role" required="required">
-                <option value="user">User</option>
-                <option value="admin">Admin</option>
+                <option value="user" name="user">User</option>
+                <option value="admin" name="admin">Admin</option>
             </select>
        
         </form>
