@@ -10,13 +10,31 @@
 
 <body>
 
-    <!-- Fillimi i kodit per header -->
+<?php  
+session_start();
+
+if (!isset($_SESSION["role"])) {
+    header("Location: login.php");
+    exit();
+}
+
+if ($_SESSION["role"] !== "admin") {
+    echo "You don't have permission to access this page.";
+    exit();
+}
+?>
+
     <header>
         <div class="headerlogin">
             <a href="homepage.php"><img class="hlogin" src="Images/headerlogo.png" alt="Header Logo" ></a>
         </div>
-    </header> <!-- Fundi i kodit per header --> 
+    </header> 
     
+
+
+
+</div>
+
     <main>
 
     <div class="box">
@@ -52,10 +70,21 @@
             <hr id="hr2">
             <p id="psignup">Don't have an account? <a href="signuppage.php" class="apswsignup">Sign up for Spotify</a></p>
         </div>
+
+        <div class="rolidiv">
+             <p style="font-family: sans-serif; font-weight: bolder;">Role</p>
+                <select name="role" required="required">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
        
         </form>
     </div>
+
+    
 </main>
+
+
 
 <footer>
     <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
@@ -64,6 +93,6 @@
 
    <script src="loginscript.js"></script>
 
-   <?php  ?>
+   
 </body>
 </html>
