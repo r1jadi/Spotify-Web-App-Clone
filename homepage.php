@@ -1,17 +1,11 @@
 <?php
- // session_start();
- // $hide="";
-  //if(!isset($_SESSION['usr']))
- //   header("location:loginpage.php");
- // else{
-  //  if($_SESSION['role'] == "admin")
-  //    $hide = "";
-   // else
- //     $hide = "hide";
- // }
+if (isset($_GET['role'])) {
+    $userRole = $_GET['role'];
+    $isAdmin = ($userRole == 'admin');
+} else {
+    $isAdmin = false;
+}
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +26,9 @@
                 <a href="homepage.php" class="navanchor">Home</a>
                 <a href="#" class="navanchor">Playlists</a>
                 <a href="aboutus.php" class="navanchor">About</a>
-                <a href="dashboard.php" class="navanchor" class="<?php echo $hide?>">Dashboard</a>
+                <?php if ($isAdmin) : ?>
+                <a href="dashboard.php" class="navanchor">Dashboard</a>
+                <?php endif; ?>
             </div>
         </div>
     </header>

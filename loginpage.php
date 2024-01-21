@@ -1,3 +1,13 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $selectedRole = $_POST['role'];
+
+    header("Location: homepage.php?role=" . $selectedRole);
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +20,7 @@
 
 <body>
 
-<?php  
 
-?>
 
     <header>
         <div class="headerlogin">
