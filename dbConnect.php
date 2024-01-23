@@ -5,6 +5,7 @@ class dbConnect{
         private $dbname = 'spotifyclone';
         private $username = 'root';
         private $password = '';
+        public $pdo;
 
         public function connectDB(){ 
             try {

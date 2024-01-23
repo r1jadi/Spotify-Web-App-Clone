@@ -8,6 +8,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+<?php
+class Database
+{
+    private $servername = "127.0.0.1";
+    private $username = "root";
+    private $password = "";
+    private $dbname = "spotifyclone";
+    private $conn;
+
+    public function __construct()
+    {
+        $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
+
+        if ($this->conn->connect_error) {
+            die("Connection failed: " . $this->conn->connect_error);
+        }
+    }
+
+    public function insertUser($email, $password, $role)
+    {
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        $password = password_hash($password, PASSWORD_DEFAULT);
+
+        $sql = "INSERT INTO login (email, password, role) VALUES ('$email', '$password', '$role')";
+
+        if ($this->conn->query($sql) === TRUE) {
+            echo "New record created successfully";
+        } else {
+            echo "Error: " . $sql . "<br>" . $this->conn->error;
+        }
+    }
+
+    public function closeConnection()
+    {
+        $this->conn->close();
+    }
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $userEmail = $_POST['usremail'];
+    $userPassword = $_POST['psw'];
+    $selectedRole = $_POST['role'];
+
+    $db = new Database();
+    $db->insertUser($userEmail, $userPassword, $selectedRole);
+    $db->closeConnection();
+
+    header("Location: homepage.php?role=" . $selectedRole);
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div>
             <hr>
             <p>Email address</p>
-            <input class="inputclasses" type="email" name="usr" required="required" placeholder="email address" id="usremail">   
+            <input class="inputclasses" type="email" name="usremail" required="required" placeholder="email address" id="usremail">   
         </div>
 
         <div>
