@@ -1,3 +1,11 @@
+<?php 
+if (isset($_GET['role'])) {
+   $userRole = $_GET['role'];
+    $isAdmin = ($userRole == 'admin');
+} else {
+    $isAdmin = false;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +25,9 @@
                 <a href="homepage.php" class="navanchor">Home</a>
                 <a href="#" class="navanchor">Playlists</a>
                 <a href="aboutus.php" class="navanchor">About</a>
-                <a href="#" class="navanchor">Contact</a>
+                <?php if ($isAdmin) : ?>
+                <a href="dashboard.php" class="navanchor">Dashboard</a>
+                <?php endif; ?>
             </div>
         </div>
     </header>
@@ -105,7 +115,7 @@
 
         <div class="headingbody">
             <h2>Your favorite artists</h2>
-            <p>Your favorite artists based on music you listened lately</p> 
+            <a href="favartists.php" style="text-decoration: none; color: white;"><p>Your favorite artists based on music you listened lately</p></a>
         </div>
 
 
@@ -136,7 +146,7 @@
             <h3>Company</h3>
             <li><a href="aboutus.php">About</a></li>
             <li><a href="#">Jobs</a></li>
-            <li><a href="#">For the record</a></li>
+            <li><a href="fortherecord.php">For the record</a></li>
         </div>
 
         <div class="kolona2">
@@ -150,8 +160,8 @@
 
         <div class="kolona3">
             <h3>Useful links</h3>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Free mobile app</a></li>
+            <li><a href="support.php">Support</a></li>
+            <li><a href="terms.php">Terms&Conditions</a></li>
         </div>
 
    </footer>
@@ -159,10 +169,6 @@
    <div class="footerbottom">
             <p>© 2023 Spotify AB</p>
         </div>
-   
-
-
-
 
         <script src="scripthomepage.js">
 
