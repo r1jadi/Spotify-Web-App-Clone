@@ -137,6 +137,6 @@
    <div class="footerbottom">
             <p>© 2023 Spotify AB</p>
         </div>
-
+<?php ?>
 </body>
 </html>
