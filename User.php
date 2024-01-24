@@ -29,7 +29,6 @@ class User{
     function getName(){
         return $this->name;
     }
-    
 }
 
 ?>

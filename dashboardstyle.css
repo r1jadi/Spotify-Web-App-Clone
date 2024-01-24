@@ -40,6 +40,11 @@ section {
     padding: 20px;
 }
 
+table{
+    display: flex;
+    justify-content: center ;
+}
+
 footer {
     background-color: #333;
     color: #fff;

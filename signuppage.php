@@ -23,7 +23,7 @@
 
     <div class="container">
 
-        <form action="loginpage.php" onsubmit="return validateSignUp()">
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return validateSignUp()">
 
             <div class="inputItem">
                 <p>Email address
@@ -80,7 +80,7 @@
                 <input type="submit" value="Sign Up" id="signupid" name="signupbutton" class="inputclasssignup">
             </div>
         </form>
-
+        
     </div>
 <!--/main-->
 
@@ -90,6 +90,6 @@
 
        <script src="scriptsignup.js"></script>
 
-       <?php  ?>
+       <?php //include_once 'RegisterController.php';?>
 </body>
 </html>
