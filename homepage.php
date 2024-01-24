@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page - Spotify</title>
-    <link rel="stylesheet" href="homepage.css"> 
+    <link rel="stylesheet" href="homepage.css">
+    
+    
 </head>
 <body>
     
@@ -15,7 +17,7 @@
                 <a href="homepage.php" class="navanchor">Home</a>
                 <a href="#" class="navanchor">Playlists</a>
                 <a href="aboutus.php" class="navanchor">About</a>
-                <a href="dashboard.php" class="navanchor">Dashboard</a>
+                <a href="#" class="navanchor">Contact</a>
             </div>
         </div>
     </header>
@@ -103,10 +105,30 @@
 
         <div class="headingbody">
             <h2>Your favorite artists</h2>
-            <a href="favartists.php" id="anchoranchor"><p>Your favorite artists based on music you listened lately</p></a>
+            <p>Your favorite artists based on music you listened lately</p> 
         </div>
-   </main>
 
+
+        <div class="slideshowTest">
+            <img src="Images/dualipapic.webp" alt="Dua Lipa" class="DuaLipaTest">
+        </div>
+        <!--div class="slideshow">
+            <img class="fotoslide" src="Images/dualipapic.webp">
+            <img class="fotoslide" src="Images/ledrivulapic.jpg">
+            <img class="fotoslide" src="Images/travisscott2.jpg">
+            <img class="fotoslide" src="Images/dhuratadora2.jpg">
+            
+        </div-->
+        
+        <!--p> slider i pa perfunduar </p-->
+
+        <!--div class="butonat">
+                <button class="button previous" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button next" onclick="plusDivs(+1)">&#10095;</button>
+            </div-->
+        
+   </main>
+   
 
    <footer>
     
@@ -114,7 +136,7 @@
             <h3>Company</h3>
             <li><a href="aboutus.php">About</a></li>
             <li><a href="#">Jobs</a></li>
-            <li><a href="fortherecord.php">For the record</a></li>
+            <li><a href="#">For the record</a></li>
         </div>
 
         <div class="kolona2">
@@ -128,8 +150,8 @@
 
         <div class="kolona3">
             <h3>Useful links</h3>
-            <li><a href="support.php">Support</a></li>
-            <li><a href="terms.php">Terms and conditions</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Free mobile app</a></li>
         </div>
 
    </footer>
@@ -137,6 +159,13 @@
    <div class="footerbottom">
             <p>© 2023 Spotify AB</p>
         </div>
-<?php ?>
+   
+
+
+
+
+        <script src="scripthomepage.js">
+
+        </script>
 </body>
 </html>
