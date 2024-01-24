@@ -1,21 +1,10 @@
-<?php
-if (isset($_GET['role'])) {
-    $userRole = $_GET['role'];
-    $isAdmin = ($userRole == 'admin');
-} else {
-    $isAdmin = false;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page - Spotify</title>
-    <link rel="stylesheet" href="homepage.css">
-    
-    
+    <link rel="stylesheet" href="homepage.css"> 
 </head>
 <body>
     
@@ -26,9 +15,7 @@ if (isset($_GET['role'])) {
                 <a href="homepage.php" class="navanchor">Home</a>
                 <a href="#" class="navanchor">Playlists</a>
                 <a href="aboutus.php" class="navanchor">About</a>
-                <?php if ($isAdmin) : ?>
                 <a href="dashboard.php" class="navanchor">Dashboard</a>
-                <?php endif; ?>
             </div>
         </div>
     </header>
@@ -150,10 +137,6 @@ if (isset($_GET['role'])) {
    <div class="footerbottom">
             <p>© 2023 Spotify AB</p>
         </div>
-
-        <script src="scripthomepage.js">
-
-        </script>
 
 </body>
 </html>
