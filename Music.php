@@ -1,6 +1,6 @@
 <?php
 
-class User{
+class Music{
     private $idmusic;
     private $title;
     private $artist;
@@ -12,8 +12,6 @@ class User{
             $this->artist = $artist;
             $this->type = $type;
     }
-
-
     function getIDMusic(){
         return $this->idmusic;
     }

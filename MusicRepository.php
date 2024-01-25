@@ -17,7 +17,7 @@ class MusicRepository{
         $idmusic = $music->getIDMusic();
         $title = $music->getTitle();
         $artist = $music->getArtist();
-        $type = $music->getType;
+        $type = $music->getType();
 
         $sql = "INSERT INTO music (id,title, artist, type) VALUES (?,?,?,?)";
 
@@ -73,6 +73,7 @@ class MusicRepository{
         $statement->execute([$id]);
 
         echo "<script>alert('delete was successful'); </script>";
-   } 
+   }
+
 }
 ?>
