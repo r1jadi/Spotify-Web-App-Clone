@@ -70,7 +70,7 @@ button:hover {
     <form action="edit_music.php" method="post">
 
         <label for="idmusic">ID Music:</label>
-        <input type="text" id="idmusic" name="idmusic" required value="<?=$user['Id']?>" readonly >
+        <input type="text" id="idmusic" name="idmusic" required value="<?=$music['Id']?>" readonly >
 
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" required>

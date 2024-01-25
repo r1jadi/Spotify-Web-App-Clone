@@ -17,6 +17,7 @@
             <li><a href="InsertMusic.php">Insert Music</a></li>
             <li><a href="EditMusic.php">Edit Music</a></li>
             <li><a href="Edit.php">Edit User</a></li>
+            <li><a href="DeleteMusic.php">Delete Music</a></li>
             <li><a href="Delete.php">Delete User</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
