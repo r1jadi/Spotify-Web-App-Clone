@@ -1,11 +1,11 @@
 <?php 
-include_once 'DatabaseConnection.php';
+include_once '../Spotify-Web-App-Clone/DatabaseConnection.php';
 
 class UserRepository{
     private $connection;
 
     function __construct(){
-        $conn = new DatabaseConenction;
+        $conn = new DatabaseConnection;
         $this->connection = $conn->startConnection();
     }
 

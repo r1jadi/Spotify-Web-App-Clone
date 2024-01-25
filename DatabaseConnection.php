@@ -1,6 +1,6 @@
 <?php
 
-class DatabaseConenction{
+class DatabaseConnection{
     private $server="localhost:3311";
     private $username="root";
     private $password="";
@@ -21,7 +21,7 @@ class DatabaseConenction{
     }
 }
 
-$db = new DatabaseConenction();
+$db = new DatabaseConnection();
 $db->startConnection();
 
 ?>

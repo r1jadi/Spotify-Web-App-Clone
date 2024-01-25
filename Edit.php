@@ -1,6 +1,6 @@
 <?php
 $userId = $_GET['id'];
-include_once 'UserRepository.php';
+include_once '../Spotify-Web-App-Clone/UserRepository.php';
 
 $userRepository = new UserRepository();
 

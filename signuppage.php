@@ -83,13 +83,13 @@
         
     </div>
 <!--/main-->
-
+<?php include_once '../Spotify-Web-App-Clone/RegisterController.php';?>
     <footer>
         <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
        </footer>
 
        <script src="scriptsignup.js"></script>
 
-       <?php include_once 'RegisterController.php';?>
+       
 </body>
 </html>

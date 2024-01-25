@@ -1,6 +1,6 @@
 <?php
-include_once 'UserRepository.php';
-include_once 'User.php';
+include_once '../Spotify-Web-App-Clone/UserRepository.php';
+include_once '../Spotify-Web-App-Clone/User.php';
 
 if(isset($_POST['signupbutton'])){
     if(empty($_POST['signupemail']) || empty($_POST['signuppassword']) || empty($_POST['signupname'])){
