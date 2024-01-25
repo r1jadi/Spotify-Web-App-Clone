@@ -87,16 +87,13 @@ button:hover {
 </html>
 
 <?php 
-
-if(isset($_POST['edibtn'])){
+if(isset($_POST['editbtn'])){ 
     $id = $music['Id'];
     $title = $_POST['title'];
     $artist = $_POST['artist'];
     $type = $_POST['type'];
 
-    $musicRepository->updateMusic($id,$title, $artist, $type);
+    $musicRepository->updateMusic($id, $title, $artist, $type);
     header("location:dashboard.php");
 }
-
-
 ?>
