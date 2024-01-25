@@ -1,7 +1,7 @@
 <?php
 
 class DatabaseConenction{
-    private $server="localhost:3308";
+    private $server="localhost:3307";
     private $username="root";
     private $password="";
     private $database = "spotifyclone";
