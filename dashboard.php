@@ -14,15 +14,15 @@
 
     <nav>
         <ul>
-            <li><a href="Edit.php">Edit</a></li>
-            <li><a href="User.php">User</a></li>
-            <li><a href="UserRepository.php">Manage Users</a></li>
-            <li><a href="Delete.php">Delete</a></li>
+            <li><a href="InsertMusic.php">Insert Music</a></li>
+            <li><a href="EditMusic.php">Edit Music</a></li>
+            <li><a href="Edit.php">Edit User</a></li>
+            <li><a href="Delete.php">Delete User</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
     </nav>
 
-    <section>
+    <!--section>
         <h2>Recent Activities</h2>
         <table border="1">
              <tr>
@@ -34,7 +34,7 @@
                  <th>Delete</th>
              </tr>
     <?php 
-             include_once '../Spotify-Web-App-Clone/UserRepository.php';
+             /*include_once '../Spotify-Web-App-Clone/UserRepository.php';
 
              $userRepository = new UserRepository();
 
@@ -53,10 +53,10 @@
                      
                 </tr>
                 ";
-             }
+             }*/
              ?>
             </table>
-    </section>
+    </section-->
     
     <footer>
         <p>&copy; 2024 Admin Dashboard</p>
