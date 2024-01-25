@@ -15,6 +15,8 @@
     <nav>
         <ul>
             <li><a href="InsertMusic.php">Insert Music</a></li>
+            <li><a href="Read.php">Read User</a></li>
+            <li><a href="ReadMusic.php">Read Music</a></li>
             <li><a href="EditMusic.php">Edit Music</a></li>
             <li><a href="Edit.php">Edit User</a></li>
             <li><a href="DeleteMusic.php">Delete Music</a></li>
@@ -22,42 +24,6 @@
             <li><a href="logout.php">Logout</a></li>
         </ul>
     </nav>
-
-    <!--section>
-        <h2>Recent Activities</h2>
-        <table border="1">
-             <tr>
-                 <th>ID</th>
-                 <th>EMAIL</th>
-                 <th>PASSWORD</th>
-                 <th>NAME</th>
-                 <th>Edit</th>
-                 <th>Delete</th>
-             </tr>
-    <?php 
-             /*include_once '../Spotify-Web-App-Clone/UserRepository.php';
-
-             $userRepository = new UserRepository();
-
-             $users = $userRepository->getAllUsers();
-
-             foreach($users as $user){
-                echo 
-                "
-                <tr>
-                     <td>$user[Id]</td>
-                     <td>$user[Email] </td>
-                     <td>$user[Password] </td>
-                     <td>$user[Name]</td>
-                     <td><a href='Edit.php?id=$user[Id]'>Edit</a> </td>
-                     <td><a href='Delete.php?id=$user[Id]'>Delete</a></td>
-                     
-                </tr>
-                ";
-             }*/
-             ?>
-            </table>
-    </section-->
     
     <footer>
         <p>&copy; 2024 Admin Dashboard</p>
