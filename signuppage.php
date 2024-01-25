@@ -90,6 +90,6 @@
 
        <script src="scriptsignup.js"></script>
 
-       <?php //include_once 'RegisterController.php';?>
+       <?php include_once 'RegisterController.php';?>
 </body>
 </html>

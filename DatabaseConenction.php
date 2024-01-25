@@ -2,9 +2,9 @@
 
 class DatabaseConenction{
     private $server="localhost:3311";
-    private $username="user1";
+    private $username="root";
     private $password="";
-    private $database = "newdatabase";
+    private $database = "spotifyclone";
 
 
     function startConnection(){
