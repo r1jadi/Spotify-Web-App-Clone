@@ -8,57 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php
-class Database
-{
-    private $servername = "localhost:3311";
-    private $username = "root";
-    private $dbname = "spotifyclone";
-    private $conn;
-
-    public function __construct()
-    {
-        $this->conn = new mysqli($this->servername, $this->username,$this->dbname);
-
-        if ($this->conn->connect_error) {
-            die("Connection failed: " . $this->conn->connect_error);
-        }
-    }
-
-    public function insertUser($email, $password, $role)
-    {
-        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
-        $password = password_hash($password, PASSWORD_DEFAULT);
-
-        $sql = "INSERT INTO login (email, password, role) VALUES ('$email', '$password', '$role')";
-
-        if ($this->conn->query($sql) === TRUE) {
-            echo "New record created successfully";
-        } else {
-            echo "Error: " . $sql . "<br>" . $this->conn->error;
-        }
-    }
-
-    public function closeConnection()
-    {
-        $this->conn->close();
-    }
-}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    $userEmail = $_POST['usremail'];
-    $userPassword = $_POST['psw'];
-    $selectedRole = $_POST['role'];
-
-    $db = new Database();
-    $db->insertUser($userEmail, $userPassword, $selectedRole);
-    $db->closeConnection();
-
-    header("Location: homepage.php?role=" . $selectedRole);
-    exit();
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -89,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="box">
 
-        <form action="homepage.php" onsubmit="return validateLogIn()">
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return validateLogIn()">
 
         <h1>Log in to Spotify</h1>
         
@@ -110,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         
         <div>
-            <input type="submit" value="Log In" id="loginid">
+            <input type="submit" value="Log In" id="loginid" name="submitlogin">
         </div>
 
         <br>
@@ -131,9 +80,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
 
-    
 </main>
-
+<?php include_once 'LoginController.php';?>
 
 
 <footer>
