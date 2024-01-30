@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Music</title>
+    <title>Update Playlist</title>
 
     <style>
 body {
@@ -69,23 +69,22 @@ body {
 </head>
 <body>
     <div class="container">
-        <h2>Update Music</h2>
-        <form action="update_music.php" method="post">
-            <label for="playlistId">Music ID:</label>
+        <h2>Update Playlist</h2>
+        <form action="update_playlist.php" method="post">
+            <label for="playlistId">Playlist ID:</label>
             <input type="text" id="playlistId" name="id" required>
 
-            <label for="playlistName">Music Title:</label>
-            <input type="text" id="playlistName" name="title" required>
+            <label for="playlistName">Playlist Name:</label>
+            <input type="text" id="playlistName" name="name" required>
 
-            <label for="numberOfSongs">Artist of Music:</label>
-            <input type="text" id="numberOfSongs" name="artist" required>
+            <label for="numberOfSongs">Number of Songs:</label>
+            <input type="text" id="numberOfSongs" name="songs" required>
 
-            <label for="playlistPhoto">Type:</label>
-            <input type="text" id="playlistPhoto" name="type" required>
+            <label for="playlistPhoto">Playlist Photo URL:</label>
+            <input type="text" id="playlistPhoto" name="photo" required>
 
-            <button type="submit">Update Music</button>
+            <button type="submit">Update Playlist</button>
         </form>
     </div>
 </body>
 </html>
-

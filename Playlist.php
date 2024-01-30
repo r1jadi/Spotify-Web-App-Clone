@@ -5,13 +5,13 @@ class Playlist{
     private $id;
     private $name;
     private $songs;
-    private $foto;
+    private $photo;
 
-    function __construct($id, $name, $songs, $foto){
+    function __construct($id, $name, $songs, $photo){
         $this->id = $id;
         $this->name = $name;
         $this->songs = $songs;
-        $this->foto = $foto;
+        $this->photo = $photo;
     }
 
     function getId(){
@@ -26,8 +26,8 @@ class Playlist{
         return $this->songs;
     }
 
-    function getFoto(){
-        return $this->foto;
+    function getPhoto(){
+        return $this->photo;
     }
 
 

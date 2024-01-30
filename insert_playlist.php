@@ -3,7 +3,7 @@ include_once 'PlaylistRepository.php';
 include_once 'Playlist.php';
 
 if(isset($_POST['submitbutton'])){
-    if(empty($_POST['name']) || empty($_POST['songs']) /*|| empty($_POST['photo'])*/){
+    if(empty($_POST['name']) || empty($_POST['songs']) || empty($_POST['photo'])){
         echo "Fill all fields!";
     }else{
         $name = $_POST['name'];

@@ -18,13 +18,13 @@ class PlaylistRepository{
         $id = $playlist->getId();
         $name = $playlist->getName();
         $songs = $playlist->getSongs();
-        $foto = $playlist->getFoto();
+        $photo = $playlist->getFoto();
 
-        $sql = "INSERT INTO playlist (id,name,songs,foto) VALUES (?,?,?,?)";
+        $sql = "INSERT INTO playlist (id,name,songs,photo) VALUES (?,?,?,?)";
 
         $statement = $conn->prepare($sql);
 
-        $statement->execute([$id,$name,$songs,$foto]);
+        $statement->execute([$id,$name,$songs,$photo]);
 
         echo "<script> alert('Playlist has been inserted successfuly!'); </script>";
 
@@ -52,14 +52,14 @@ class PlaylistRepository{
         return $playlist;
     }
 
-    function updatePlaylist($id,$name,$songs,$foto){
+    function updatePlaylist($id,$name,$songs,$photo){
         $conn = $this->connection;
 
-        $sql = "UPDATE playlist SET name=?, songs=?, foto=? WHERE id=?";
+        $sql = "UPDATE playlist SET name=?, songs=?, photo=? WHERE id=?";
 
         $statement = $conn->prepare($sql);
 
-        $statement->execute([$name,$songs,$foto,$id]);
+        $statement->execute([$name,$songs,$photo,$id]);
 
         echo "<script>alert('update was successful'); </script>";
    }
