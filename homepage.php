@@ -115,7 +115,7 @@ if (isset($_GET['role'])) {
 
         <div class="headingbody">
             <h2>Your favorite artists</h2>
-            <a href="favartists.php" style="text-decoration: none; color: white;"><p>Your favorite artists based on music you listened lately</p></a>
+            <a href="favartists.php" style="text-decoration: none; color: white;"><p>Click here to see your favorite artists based on music you listened lately</p></a>
         </div>
 
 
