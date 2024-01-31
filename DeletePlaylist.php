@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete User</title>
+    <title>Delete Playlist</title>
 
     <style>
 
@@ -63,28 +63,28 @@ a {
 <body>
 
     <div class="container">
-        <h2>Delete User</h2>
+        <h2>Delete Music</h2>
 
         <?php
 
-        include_once 'UserRepository.php';
+        include_once 'PlaylistRepository.php';
 
-        $userRepository = new UserRepository();
+        $playlistRepository = new PlaylistRepository();
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $idToDelete = $_POST['idToDelete'];
 
-            $userRepository->deleteUser($idToDelete);
+            $playlistRepository->deletePlaylist($idToDelete);
         }
         ?>
 
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-            <label for="idToDelete">Enter User ID to Delete:</label>
+            <label for="idToDelete">Enter Playlist ID to Delete:</label>
             <input type="text" name="idToDelete" required>
             <button type="submit">Delete</button>
         </form>
 
-        <a href="Read.php">View All Users</a>
+        <a href="ReadPlaylists.php">View All Playlists</a>
     </div>
 
 </body>

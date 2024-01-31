@@ -72,7 +72,7 @@ a {
         $musicRepository = new MusicRepository();
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $idToDelete = $_POST['id'];
+            $idToDelete = $_POST['idToDelete'];
 
             $musicRepository->deleteMusic($idToDelete);
         }
