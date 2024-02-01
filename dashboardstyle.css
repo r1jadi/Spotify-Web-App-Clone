@@ -43,6 +43,12 @@ nav a:hover {
 
 section {
     padding: 20px;
+    background-color: #444;
+    text-align: center;
+}
+
+section h2 {
+    color: #1DB954;
 }
 
 table {
