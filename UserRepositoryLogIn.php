@@ -17,13 +17,12 @@ class UserRepositoryLogIn{
         $id = $user->getId();
         $email = $user->getEmail();
         $password = $user->getPassword();
-        $role = $user->getRole();
 
-        $sql = "INSERT INTO login (id,email,password,role) VALUES (?,?,?,?)";
+        $sql = "INSERT INTO login (id,email,password) VALUES (?,?,?)";
 
         $statement = $conn->prepare($sql);
 
-        $statement->execute([$id,$email,$password,$role]);
+        $statement->execute([$id,$email,$password]);
 
         echo "<script> alert('User has been inserted successfuly!'); </script>";
 
@@ -51,14 +50,14 @@ class UserRepositoryLogIn{
         return $user;
     }
 
-    function updateUser($id,$email,$password,$role){
+    function updateUser($id,$email,$password){
          $conn = $this->connection;
 
-         $sql = "UPDATE login SET role=?, email=?, password=? WHERE id=?";
+         $sql = "UPDATE login SET email=?, password=? WHERE id=?";
 
          $statement = $conn->prepare($sql);
 
-         $statement->execute([$role,$email,$password,$id]);
+         $statement->execute([$email,$password,$id]);
 
          echo "<script>alert('update was successful'); </script>";
     } 

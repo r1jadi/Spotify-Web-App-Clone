@@ -4,13 +4,11 @@ class UserLogIn{
     private $id;
     private $email;
     private $password;
-    private $role;
 
-    function __construct($id, $email, $password, $role){
+    function __construct($id, $email, $password){
             $this->id = $id;
             $this->email = $email;
             $this->password = $password;
-            $this->role = $role;
     }
 
 
@@ -26,9 +24,6 @@ class UserLogIn{
         return $this->password;
     }
 
-    function getRole(){
-        return $this->role;
-    }
 }
 
 ?>

@@ -79,9 +79,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        
         </form>
     </div>
-
+    <?php include_once 'LoginController.php';?>
 </main>
-<?php include_once 'LoginController.php';?>
+
 
 
 <footer>
