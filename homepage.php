@@ -119,9 +119,9 @@ if (isset($_GET['role'])) {
         </div>
 
 
-        <div class="slideshowTest">
+        <!--div class="slideshowTest">
             <img src="Images/dualipapic.webp" alt="Dua Lipa" class="DuaLipaTest">
-        </div>
+        </div-->
         <!--div class="slideshow">
             <img class="fotoslide" src="Images/dualipapic.webp">
             <img class="fotoslide" src="Images/ledrivulapic.jpg">
