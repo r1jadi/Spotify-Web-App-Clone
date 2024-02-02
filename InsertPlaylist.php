@@ -55,7 +55,7 @@ button {
 
     <div class="container">
         <h2>Insert Playlist</h2>
-        <form action="insert_playlist.php" method="post" enctype="multipart/form-data">
+        <form action="insert_playlist.php" method="post">
             <label for="name">Playlist Name:</label>
             <input type="text" name="name" required>
 

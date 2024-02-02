@@ -18,7 +18,7 @@ class PlaylistRepository{
         $id = $playlist->getId();
         $name = $playlist->getName();
         $songs = $playlist->getSongs();
-        $photo = $playlist->getFoto();
+        $photo = $playlist->getPhoto();
 
         $sql = "INSERT INTO playlist (id,name,songs,photo) VALUES (?,?,?,?)";
 
