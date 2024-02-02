@@ -58,10 +58,11 @@ p {
         <?php
             include_once 'PlaylistRepository.php';
 
-            $playlistRepo = new PlaylistRepository();
-            $playlists = $playlistRepo->getAllPlaylists();
+            $playlistRepository = new PlaylistRepository();
+            $playlists = $playlistRepository->getAllPlaylists();
 
             foreach ($playlists as $playlist) {
+                echo "<p>Image Path: {$playlist['photo']}</p>";
                 echo "<div class='playlist'>
                         <img src='{$playlist['photo']}' alt='Playlist Photo'>
                         <h2>{$playlist['name']}</h2>
